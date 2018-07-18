@@ -1,0 +1,304 @@
+        div.top {
+            position: fixed;
+        }
+        /*
+        @media (max-width:690px) {
+            .form .main-form .half {
+                width: 100%;
+                display: block;
+                color: white
+            }
+            .form .main-form input {
+                width: 65%;
+            }
+            .form .main-form select {
+                width: 65%;
+            }
+            .form .main-form label {
+                right: 17.5%;
+            }
+        }
+        @media (max-width:380px) {
+            .form .main-form input {
+                width: 50%;
+            }
+            .form .main-form select {
+                width: 50%;
+            }
+            .form .main-form label {
+                right: 25%;
+            }
+        }
+
+        .form .main-form .halfradio {
+            width: 44%;
+            display: inline-block;
+            color: white
+        }
+        */
+
+        .form {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-color: #181a1f;
+        }
+/* Designed by:https://goo.gl/B56o1U 
+num:01061578345 +20 */
+        .form h1 {
+            color: white;
+            font-size: 2vmax;
+        }
+
+        form {
+            padding-top: 100px;
+            width: 90%;
+            margin: auto;
+            direction: rtl;
+            color: white;
+        }
+
+        .full-label {
+            float: right;
+        }
+
+        .full-input {
+            float: left;
+            width: 85%
+        }
+
+        .half-input {
+            float: left;
+            width: 68%;
+        }
+
+        .full-con {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .half-con-right,
+        .half-con-left {
+            width: 50%
+        }
+
+        .half-con-right {
+            float: right;
+            overflow: hidden;
+        }
+
+        .half-con-left {
+            float: left;
+            overflow: hidden;
+        }
+
+        .half-con-right-button,
+        .half-con-left-button {
+            width: 50%
+        }
+
+        .half-con-right-button {
+            float: right;
+            overflow: hidden;
+        }
+
+        .half-con-left-button {
+            float: left;
+            overflow: hidden;
+        }
+
+        .half-label {
+            float: right;
+        }
+
+        .half-input-margin {
+            margin-left: 2%;
+        }
+/* Designed by:https://goo.gl/B56o1U 
+num:01061578345 +20 */
+        .half-con-right-radio,
+        .half-con-left-radio {
+            width: 30%;
+            overflow: hidden;
+        }
+
+        .half-con-left-radio {
+            float: left;
+            text-align: start;
+        }
+
+        .half-con-right-radio {
+            float: right;
+            text-align: start;
+        }
+
+        .half-label-radio {
+            float: right;
+            width: 30%;
+            text-align: start;
+        }
+
+        .form input {
+            overflow: visible;
+            padding: 5px 20px 5px 5px;
+            height: 32px;
+            background: #3a3d44;
+            border: 1px solid #20232a;
+            color: white;
+            font-weight: 700;
+            font-family: 'Droid Arabic Kufi', sans-serif;
+        }
+
+        .form select {
+            overflow: visible;
+            padding: 5px 20px 5px 5px;
+            height: 32px;
+            background: #3a3d44;
+            border: 1px solid #20232a;
+            color: white;
+            font-weight: 700;
+        }
+
+        .form input[type="radio"] {
+            overflow: visible;
+            padding: 5px 20px 5px 5px;
+            height: 0;
+            background: #3a3d44;
+            border: 1px solid #20232a;
+            color: white;
+            font-weight: 700;
+        }
+/* Designed by:https://goo.gl/B56o1U 
+num:01061578345 +20 */
+        .form button {
+            height: 34px;
+            padding: 5px 5px 5px 5px;
+            font-family: 'Droid Arabic Kufi', sans-serif;
+            background: #c0392b;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            padding: 0 15px;
+            margin-right: 6px;
+            box-shadow: 0px 0px 2px #b97373e6;
+            cursor: pointer;
+        }
+
+        @media (max-width:999px) {
+            .sidenav {
+                padding-top: 180px;
+            }
+            .form {
+                padding-top: 200px;
+            }
+            form {
+                width: 80%;
+            }
+        }
+
+        label {
+            font-size: 1.2vmax;
+        }
+
+        @media (max-width:680px) {
+            label,
+            .full-label {
+                display: block;
+                text-align: right;
+                position: relative;
+                right: 15%;
+                padding: 5px 0px;
+                float: none;
+                font-size: 2vmax;
+            }
+            .half-con-right,
+            .half-con-left {
+                width: 100%;
+                float: none;
+            }
+            .half-input-margin {
+                margin-left: 0%;
+            }
+            .half-input {
+                float: left;
+                width: 85%;
+            }
+            .half-label {
+                display: block;
+                text-align: right;
+                position: relative;
+                right: 15%;
+                padding: 5px 0px;
+                float: none;
+                font-size: 2vmax;
+            }
+            .half-label-radio {
+                width: 100%;
+                display: block;
+                text-align: right;
+                position: relative;
+                right: 15%;
+                padding: 5px 0px;
+                float: none;
+                font-size: 2vmax;
+            }
+            .half-con-right-radio {
+                float: right;
+                width: 50%;
+                text-align: left;
+            }
+            .half-con-left-radio {
+                float: left;
+                width: 50%;
+                text-align: left;
+            }
+            section input.full-input,
+            .form section select,
+            section input.half-input {
+                width: 100%;
+            }
+            section .half-label,
+            section .full-label,
+            section .half-label-radio {
+                display: block;
+                text-align: right;
+                position: relative;
+                right: 0;
+                padding: 5px 0px;
+                float: none;
+                font-size: 2vmax;
+            }
+            /* Designed by:https://goo.gl/B56o1U 
+num:01061578345 +20 */
+            .half-label,
+            .full-label,
+            .half-label-radio {
+                display: block;
+                text-align: right;
+                position: relative;
+                right: 0;
+                padding: 5px 0px;
+                float: none;
+                font-size: 2vmax;
+            }
+            input.full-input,
+            .form select,
+            input.half-input {
+                width: 100%;
+            }
+            form {
+                width: 70%;
+            }
+        }
+
+        @media (max-width:440px) {
+            form {
+                width: 60%;
+            }
+        }
+
+        .container-button {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }

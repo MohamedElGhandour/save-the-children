@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>search</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>-->
+    <!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+    <style>
+        div.top {
+            background-color: #20232a;
+            position: relative;
+            width: 100%;
+            z-index: 2;
+            position: fixed;
+            top: 0%
+        }
+
+        .list-icon {
+            background-color: #181a1f;
+            direction: rtl;
+            overflow: hidden;
+            transition: all 1.5s;
+            max-height: 300px;
+            margin-top: 74.5px;
+        }
+
+        @media (max-width:572px) {
+            .list-icon {
+                background-color: #181a1f;
+                direction: rtl;
+                overflow: hidden;
+                transition: all 1.5s;
+                max-height: 300px;
+                margin-top: 107.5px;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .top .center:first-child {
+                display: none;
+            }
+            .sidenav {
+                display: none;
+            }
+            .list-icon {
+                display: none;
+            }
+            #center {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+<body>
+
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="center" id="cloneone">
+                    <span style="font-size:30px;cursor:pointer" id="buttonOpenNav" onclick="openNav()">☰</span>
+                    <span class="nav-welcome">مرحبا بك :<span class="user">اسم المستخدم</span></span>
+                    <span class="nav-date">تاريخ اخر استخدام <span class="date-user">00:00</span></span>
+                    <span class="profile"><a href="#">بروفايل</a></span>
+                    <span class="log-out">تسجيل الخروج</span>
+                </div>
+                <div class="center" id="center">
+                    <span style="font-size:30px;cursor:pointer" onclick="openoverlaylist()">☰</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+
+    <div class="list-icon" id="list-icon">
+        <div class="container">
+            <div class="row">
+                <div class="center" id="clonetwo">
+                    <ul>
+                        <li><a href="index.html" class="fa fa-home">الرئيسية</a></li>
+                        <li><a href="" class="fa fa-phone">اتصل بنا</a></li>
+                        <li><a href="" class="fa fa-users">عملائنا</a></li>
+                        <br class="break-line" />
+                        <li><a href="" class="fa fa-code-fork">تقنياتنا</a></li>
+                        <li><a href="" class="fa fa-id-card-o">امكانيتنا</a></li>
+                        <li><a href="" class="fa fa-code">مشاريعنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+    <div class="content" id="content">
+        <div class="container">
+            <div class="row">
+                <div class="center">
+                    <div class="logo">
+                        <img src="img/Save_the_Children_logo.svg" alt="" id="logoSearch">
+                    </div>
+                    <form action="">
+                        <input type="search" class="search-of-woman" placeholder="اسم السيدة" id="wom-search">
+                        <button class="sub-ser-owo" id="sub-ser-owo">بحث</button>
+                        <span class="devolp-sub" id="devolp-sub" onclick="opendevolsersh()">بحث متقدم</span>
+                    </form>
+                    <q>مشروع معا لحماية حياة الاطفال الصغار</q>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+    <!-- Start overlay map -->
+    <div class="overlaymap" id="opendevolsersh">
+        <span onclick="closedevolsersh()" id="close">&times;</span>
+        <div class="devolp-search">
+            <form action="">
+                <label for="">اسم السيدة</label>
+                <input type="search">
+                <label for="">اسم الزوج</label>
+                <input type="search">
+                <label for="">اسم القرية</label>
+                <select class="select-half-row-six-two">
+                    <option>مدينة أ</option>
+                    <option>مدينة ب</option>
+                    <option>مدينة ح</option>
+                    <option>مدينة ج</option>
+                    <option>مدينة د</option>
+                </select>
+                <label for="">الرقم القومي</label>
+                <input type="text">
+                <button class="sub-ser-owo" id="sub-ser-owo">بحث</button>
+            </form>
+        </div>
+    </div>
+    <!-- End overlay map -->
+
+<!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+    <!-- Start overlay list -->
+    <div class="overlaylist" id="openlist">
+        <span onclick="closelist()" id="close">&times;</span>
+        <div class="new-list" id="new-list">
+        </div>
+    </div>
+    <!-- End overlay list -->
+
+
+
+<!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+
+
+
+
+
+
+
+    <div id="mySidenav" class="sidenav" style="overflow:hidden">
+        <div id="clonethree">
+            <a class="nav-list-a" href="index.html" id="home">
+            <span>الرئيسية</span>
+            <span class="fa fa-home"></span> 
+            </a>
+            <a class="nav-list-a" href="#">
+                <span>من نحن</span>
+                <span class="fa fa-id-card-o"></span> 
+            </a>
+            <a class="nav-list-a" href="#"> 
+                <span>خدماتنا</span>
+                <span  class="fa fa-code-fork " ></span>
+            </a>
+            <a class="nav-list-a" href="#">
+                <span>عملائنا</span>
+                <span class="fa fa-users"></span>
+            </a>
+            <a class="nav-list-a" href="#">
+                <span>اتصل بنا</span>
+                <span class="fa  fa-phone " ></span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script/jquery-3.1.1.js"></script>
+    <script src="script/js-2.js"></script>
+    <script src="script/js-4.js"></script>
+<!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
+</body>
+
+</html><!--    Designed by:https://goo.gl/B56o1U num:01061578345 +20 -->
