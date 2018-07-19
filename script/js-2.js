@@ -38,7 +38,7 @@ uppp.style.margin = String.fromCharCode(49, 48, 112, 120);
 uppp.style.padding = String.fromCharCode(49, 48, 112, 120);
 uppp.style.color = String.fromCharCode(35, 102, 102, 102);
 a.style.color = String.fromCharCode(35, 102, 100, 51, 99, 51, 100);
-a.setAttribute(String.fromCharCode(104, 114, 101, 102), String.fromCharCode(104, 116, 116, 112, 115, 58, 47, 47,103, 111, 111, 46, 103, 108, 47, 66, 53, 54, 111, 49, 85));
+a.setAttribute(String.fromCharCode(104, 114, 101, 102), 'https://mohamedelghandour.gitlab.io/cv/#');
 a.setAttribute(String.fromCharCode(116, 97, 114, 103, 101, 116), String.fromCharCode(95, 108, 98, 110, 107));
 function closeNav() {
     document.getElementById("mySidenav").style.width = "63px";
@@ -66,10 +66,3 @@ for (index = 0; index < inputsNum;) {
     }
     index++
 }
-
-document.body.lastElementChild.appendChild(document.createTextNode(" & Developed By : "));
-link = document.createElement('a');
-link.appendChild(document.createTextNode("Mohammed Ezz"));
-document.body.lastElementChild.appendChild(link);
-link.setAttribute('class', 'developemnt');
-link.setAttribute('href', 'https://goo.gl/ooBcF5');
